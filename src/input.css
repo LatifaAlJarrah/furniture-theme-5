@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Quaternary Color Palette */
+  --color-quaternary-50: #EDF1F6;
+  --color-quaternary-100: #C8D6E4;
+  --color-quaternary-200: #91B0CA;
+  --color-quaternary-300: #718A9E;
+  --color-quaternary-400: #526575;
+  --color-quaternary-500: #36434E;
+  --color-quaternary-600: #16232A;
+  
+  /* Semantic Color Aliases */
+  --color-background: #EDF1F6;
+  --color-surface: #c6d6e4;
+  --color-primary: #91b0ca;
+  --color-secondary: #718A9E;
+  --color-accent: #526575;
+  --color-dark: #36434e;
+  --color-darkest: #1b232a;
+
+  /* Accent Colors */
+  --color-promo-red: #EE0000;
+  --color-promo-yellow: #FFD700;
+}
+
+@layer utilities {
+    .inter-font {
+      font-family: "Inter", sans-serif;
+    }
+    .poppins-font {
+        font-family: "Poppins", sans-serif;
+    }
+    .arimo-font {
+        font-family: "Arimo", sans-serif;
+    }
+    .source-sans-3-font {
+        font-family: "Source Sans 3", sans-serif;
+    }
+
+    /* Hero Swiper Custom Styles */
+    .heroSwiper {
+        width: 100%;
+        height: auto;
+    }
+
+    .heroSwiper .swiper-button-prev,
+    .heroSwiper .swiper-button-next {
+        color: var(--color-darkest);
+    }
+
+    .heroSwiper .swiper-button-prev:hover,
+    .heroSwiper .swiper-button-next:hover {
+        background-color: var(--color-surface) !important;
+    }
+
+    .heroSwiper .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: var(--color-quaternary-200);
+        opacity: 0.5;
+    }
+
+    .heroSwiper .swiper-pagination-bullet-active {
+        background: var(--color-darkest);
+        opacity: 1;
+    }
+
+    .heroSwiper .swiper-slide {
+        opacity: 0 !important;
+    }
+
+    .heroSwiper .swiper-slide-active {
+        opacity: 1 !important;
+    }
+
+    /* Filter Tab Styles */
+    .filter-tab {
+        border-color: #e5e7eb;
+        color: #6b7280;
+        background-color: white;
+    }
+    .filter-tab:hover {
+        border-color: #91b0ca;
+        color: #526575;
+    }
+    .filter-tab.active {
+        border-color: #526575;
+        background-color: #526575;
+        color: white;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Testimonials Swiper Styles */
+    .testimonialsSwiper {
+        padding: 20px 0;
+    }
+
+    .testimonialsSwiper .swiper-slide {
+        height: auto;
+    }
+
+    .testimonials-prev,
+    .testimonials-next {
+        transition: all 0.3s ease;
+    }
+
+    .testimonials-prev:disabled,
+    .testimonials-next:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
