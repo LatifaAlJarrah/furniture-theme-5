@@ -3,19 +3,274 @@
 
 // Product data
 const shopProducts = [
-    { id: 1, name: 'Luna Curve Chair', price: 10.99, originalPrice: 14.99, rating: 4, image: './src/assets/images/product-1.png', category: 'chair', fabricColor: 'mint', material: 'wood', brand: 'gftima', size: '1-seater', onSale: true },
-    { id: 2, name: 'Velvet Chester Chair', price: 14.99, originalPrice: null, rating: 5, image: './src/assets/images/product-2.png', category: 'chair', fabricColor: 'purple', material: 'metal', brand: 'nova', size: '2-seater', onSale: false },
-    { id: 3, name: 'Roid Lounge Chair', price: 14.99, originalPrice: null, rating: 4, image: './src/assets/images/product-3.png', category: 'chair', fabricColor: 'orange', material: 'wood', brand: 'nessio', size: '1-seater', onSale: false },
-    { id: 4, name: 'Modern Accent Chair', price: 299.99, originalPrice: null, rating: 5, image: './src/assets/images/product-1.png', category: 'chair', fabricColor: 'grey', material: 'mdf', brand: 'forms', size: '1-seater', onSale: false },
-    { id: 5, name: 'Comfort Lounge Chair', price: 449.99, originalPrice: null, rating: 4, image: './src/assets/images/product-2.png', category: 'chair', fabricColor: 'pink', material: 'wood', brand: 'linea-sofa', size: '2-seater', onSale: false },
-    { id: 6, name: 'Elegant Dining Chair', price: 199.99, originalPrice: null, rating: 5, image: './src/assets/images/product-3.png', category: 'chair', fabricColor: 'green', material: 'metal', brand: 'modura', size: '1-seater', onSale: false },
-    { id: 7, name: 'Executive Office Chair', price: 599.99, originalPrice: null, rating: 4, image: './src/assets/images/product-1.png', category: 'chair', fabricColor: 'teal', material: 'cane', brand: 'gftima', size: '1-seater', onSale: false },
-    { id: 8, name: 'Classic Armchair', price: 349.99, originalPrice: null, rating: 5, image: './src/assets/images/product-2.png', category: 'chair', fabricColor: 'baby-pink', material: 'wood', brand: 'nova', size: '2-seater', onSale: false },
-    { id: 9, name: 'Contemporary Chair', price: 249.99, originalPrice: null, rating: 4, image: './src/assets/images/product-3.png', category: 'chair', fabricColor: 'mint', material: 'mdf', brand: 'nessio', size: '3-seater', onSale: false },
-    { id: 10, name: 'Contemporary Chair', price: 249.99, originalPrice: null, rating: 4, image: './src/assets/images/product-3.png', category: 'chair', fabricColor: 'mint', material: 'mdf', brand: 'nessio', size: '3-seater', onSale: false },
-    { id: 11, name: 'Contemporary Chair', price: 249.99, originalPrice: null, rating: 4, image: './src/assets/images/product-3.png', category: 'chair', fabricColor: 'mint', material: 'mdf', brand: 'nessio', size: '3-seater', onSale: false },
-    { id: 12, name: 'Contemporary Chair', price: 249.99, originalPrice: null, rating: 4, image: './src/assets/images/product-3.png', category: 'chair', fabricColor: 'mint', material: 'mdf', brand: 'nessio', size: '3-seater', onSale: false },
-    
+    {
+        id: 1,
+        name: 'Luna Curve Chair',
+        price: 199.00,
+        originalPrice: 499.00,
+        rating: 4,
+        image: './src/assets/images/product-1.png',
+        images: ['./src/assets/images/product-1.png', './src/assets/images/product-1.png', './src/assets/images/product-1.png'],
+        category: 'Living Room, Armchairs',
+        fabricColor: 'grey',
+        colorVariants: [
+            { name: 'Grey', value: 'grey', image: './src/assets/images/product-1.png' },
+            { name: 'Orange', value: 'orange', image: './src/assets/images/product-2.png' }
+        ],
+        material: 'wood',
+        brand: 'gftima',
+        size: '1-seater',
+        onSale: true,
+        description: "Comfort's new style. Curved silhouette with premium cushioning for everyday comfort. Perfect for living room, reading nooks, and modern spaces.",
+        measurements: '37" x 31" x 30"',
+        sku: '0247657',
+        isNew: true
+    },
+    {
+        id: 2,
+        name: 'Velvet Chester Chair',
+        price: 14.99,
+        originalPrice: null,
+        rating: 5,
+        image: './src/assets/images/product-2.png',
+        images: ['./src/assets/images/product-2.png', './src/assets/images/product-2.png', './src/assets/images/product-2.png'],
+        category: 'Living Room, Armchairs',
+        fabricColor: 'purple',
+        colorVariants: [
+            { name: 'Purple', value: 'purple', image: './src/assets/images/product-2.png' },
+            { name: 'Grey', value: 'grey', image: './src/assets/images/product-1.png' }
+        ],
+        material: 'metal',
+        brand: 'nova',
+        size: '2-seater',
+        onSale: false,
+        description: "Elegant velvet upholstery with classic chesterfield design. Perfect for adding sophistication to any room.",
+        measurements: '40 x 35 x 32',
+        sku: '0247658',
+        isNew: false
+    },
+    {
+        id: 3,
+        name: 'Roid Lounge Chair',
+        price: 14.99,
+        originalPrice: null,
+        rating: 4,
+        image: './src/assets/images/product-3.png',
+        images: ['./src/assets/images/product-3.png', './src/assets/images/product-3.png', './src/assets/images/product-3.png'],
+        category: 'Living Room, Armchairs',
+        fabricColor: 'orange',
+        colorVariants: [
+            { name: 'Orange', value: 'orange', image: './src/assets/images/product-3.png' },
+            { name: 'Grey', value: 'grey', image: './src/assets/images/product-1.png' }
+        ],
+        material: 'wood',
+        brand: 'nessio',
+        size: '1-seater',
+        onSale: false,
+        description: "Modern lounge chair with sleek design and comfortable seating. Ideal for contemporary living spaces.",
+        measurements: '38 x 32 x 31',
+        sku: '0247659',
+        isNew: false
+    },
+    {
+        id: 4,
+        name: 'Modern Accent Chair',
+        price: 299.99,
+        originalPrice: null,
+        rating: 5,
+        image: './src/assets/images/product-1.png',
+        images: ['./src/assets/images/product-1.png', './src/assets/images/product-1.png', './src/assets/images/product-1.png'],
+        category: 'Living Room, Armchairs',
+        fabricColor: 'grey',
+        colorVariants: [
+            { name: 'Grey', value: 'grey', image: './src/assets/images/product-1.png' }
+        ],
+        material: 'mdf',
+        brand: 'forms',
+        size: '1-seater',
+        onSale: false,
+        description: "Stylish accent chair that complements any decor. Features premium materials and expert craftsmanship.",
+        measurements: '36 x 30 x 29',
+        sku: '0247660',
+        isNew: false
+    },
+    {
+        id: 5,
+        name: 'Comfort Lounge Chair',
+        price: 449.99,
+        originalPrice: null,
+        rating: 4,
+        image: './src/assets/images/product-2.png',
+        images: ['./src/assets/images/product-2.png', './src/assets/images/product-2.png', './src/assets/images/product-2.png'],
+        category: 'Living Room, Armchairs',
+        fabricColor: 'pink',
+        colorVariants: [
+            { name: 'Pink', value: 'pink', image: './src/assets/images/product-2.png' }
+        ],
+        material: 'wood',
+        brand: 'linea-sofa',
+        size: '2-seater',
+        onSale: false,
+        description: "Ultra-comfortable lounge chair designed for relaxation. Perfect for reading corners and cozy spaces.",
+        measurements: '42 x 36 x 33',
+        sku: '0247661',
+        isNew: false
+    },
+    {
+        id: 6,
+        name: 'Elegant Dining Chair',
+        price: 199.99,
+        originalPrice: null,
+        rating: 5,
+        image: './src/assets/images/product-3.png',
+        images: ['./src/assets/images/product-3.png', './src/assets/images/product-3.png', './src/assets/images/product-3.png'],
+        category: 'Dining Room, Dining Chairs',
+        fabricColor: 'green',
+        colorVariants: [
+            { name: 'Green', value: 'green', image: './src/assets/images/product-3.png' }
+        ],
+        material: 'metal',
+        brand: 'modura',
+        size: '1-seater',
+        onSale: false,
+        description: "Elegant dining chair with timeless design. Combines style and functionality for your dining area.",
+        measurements: '20 x 20 x 36',
+        sku: '0247662',
+        isNew: false
+    },
+    {
+        id: 7,
+        name: 'Executive Office Chair',
+        price: 599.99,
+        originalPrice: null,
+        rating: 4,
+        image: './src/assets/images/product-1.png',
+        images: ['./src/assets/images/product-1.png', './src/assets/images/product-1.png', './src/assets/images/product-1.png'],
+        category: 'Home Office, Office Chairs',
+        fabricColor: 'teal',
+        colorVariants: [
+            { name: 'Teal', value: 'teal', image: './src/assets/images/product-1.png' }
+        ],
+        material: 'cane',
+        brand: 'gftima',
+        size: '1-seater',
+        onSale: false,
+        description: "Professional executive chair with ergonomic design. Perfect for long work hours and maximum comfort.",
+        measurements: '28 x 28 x 42',
+        sku: '0247663',
+        isNew: false
+    },
+    {
+        id: 8,
+        name: 'Classic Armchair',
+        price: 349.99,
+        originalPrice: null,
+        rating: 5,
+        image: './src/assets/images/product-2.png',
+        images: ['./src/assets/images/product-2.png', './src/assets/images/product-2.png', './src/assets/images/product-2.png'],
+        category: 'Living Room, Armchairs',
+        fabricColor: 'baby-pink',
+        colorVariants: [
+            { name: 'Baby Pink', value: 'baby-pink', image: './src/assets/images/product-2.png' }
+        ],
+        material: 'wood',
+        brand: 'nova',
+        size: '2-seater',
+        onSale: false,
+        description: "Classic armchair with traditional design elements. Adds elegance and comfort to any room.",
+        measurements: '39 x 34 x 31',
+        sku: '0247664',
+        isNew: false
+    },
+    {
+        id: 9,
+        name: 'Contemporary Chair',
+        price: 249.99,
+        originalPrice: null,
+        rating: 4,
+        image: './src/assets/images/product-3.png',
+        images: ['./src/assets/images/product-3.png', './src/assets/images/product-3.png', './src/assets/images/product-3.png'],
+        category: 'Living Room, Armchairs',
+        fabricColor: 'mint',
+        colorVariants: [
+            { name: 'Mint', value: 'mint', image: './src/assets/images/product-3.png' }
+        ],
+        material: 'mdf',
+        brand: 'nessio',
+        size: '3-seater',
+        onSale: false,
+        description: "Contemporary chair with modern aesthetics. Perfect for minimalist and contemporary interiors.",
+        measurements: '45 x 38 x 34',
+        sku: '0247665',
+        isNew: false
+    },
+    {
+        id: 10,
+        name: 'Contemporary Chair',
+        price: 249.99,
+        originalPrice: null,
+        rating: 4,
+        image: './src/assets/images/product-3.png',
+        images: ['./src/assets/images/product-3.png', './src/assets/images/product-3.png', './src/assets/images/product-3.png'],
+        category: 'Living Room, Armchairs',
+        fabricColor: 'mint',
+        colorVariants: [
+            { name: 'Mint', value: 'mint', image: './src/assets/images/product-3.png' }
+        ],
+        material: 'mdf',
+        brand: 'nessio',
+        size: '3-seater',
+        onSale: false,
+        description: "Contemporary chair with modern aesthetics. Perfect for minimalist and contemporary interiors.",
+        measurements: '45 x 38 x 34',
+        sku: '0247666',
+        isNew: false
+    },
+    {
+        id: 11,
+        name: 'Contemporary Chair',
+        price: 249.99,
+        originalPrice: null,
+        rating: 4,
+        image: './src/assets/images/product-3.png',
+        images: ['./src/assets/images/product-3.png', './src/assets/images/product-3.png', './src/assets/images/product-3.png'],
+        category: 'Living Room, Armchairs',
+        fabricColor: 'mint',
+        colorVariants: [
+            { name: 'Mint', value: 'mint', image: './src/assets/images/product-3.png' }
+        ],
+        material: 'mdf',
+        brand: 'nessio',
+        size: '3-seater',
+        onSale: false,
+        description: "Contemporary chair with modern aesthetics. Perfect for minimalist and contemporary interiors.",
+        measurements: '45 x 38 x 34',
+        sku: '0247667',
+        isNew: false
+    },
+    {
+        id: 12,
+        name: 'Contemporary Chair',
+        price: 249.99,
+        originalPrice: null,
+        rating: 4,
+        image: './src/assets/images/product-3.png',
+        images: ['./src/assets/images/product-3.png', './src/assets/images/product-3.png', './src/assets/images/product-3.png'],
+        category: 'Living Room, Armchairs',
+        fabricColor: 'mint',
+        colorVariants: [
+            { name: 'Mint', value: 'mint', image: './src/assets/images/product-3.png' }
+        ],
+        material: 'mdf',
+        brand: 'nessio',
+        size: '3-seater',
+        onSale: false,
+        description: "Contemporary chair with modern aesthetics. Perfect for minimalist and contemporary interiors.",
+        measurements: '45 x 38 x 34',
+        sku: '0247668',
+        isNew: false
+    },
+
 ];
 
 // Current filters state
@@ -59,7 +314,7 @@ function setupFilterListeners() {
 function toggleFabricColor(colorValue, labelElement) {
     const colorIndex = currentFilters.fabricColors.indexOf(colorValue);
     const colorCircle = labelElement.querySelector('div');
-    
+
     if (colorIndex > -1) {
         // Remove color from filters
         currentFilters.fabricColors.splice(colorIndex, 1);
@@ -168,14 +423,14 @@ function applyFilters() {
 
     // Material filter
     if (currentFilters.materials.length > 0) {
-        filteredProducts = filteredProducts.filter(p => 
+        filteredProducts = filteredProducts.filter(p =>
             currentFilters.materials.includes(p.material)
         );
     }
 
     // Brand filter
     if (currentFilters.brands.length > 0) {
-        filteredProducts = filteredProducts.filter(p => 
+        filteredProducts = filteredProducts.filter(p =>
             currentFilters.brands.includes(p.brand)
         );
     }
@@ -269,12 +524,12 @@ function createProductCard(product) {
     }).join('');
 
     card.innerHTML = `
-        <div class="relative bg-gray-50 rounded-2xl p-4 mb-4 overflow-hidden">
+        <div class="relative bg-gray-50 rounded-2xl p-4 mb-4 overflow-hidden cursor-pointer" onclick="navigateToProduct(${product.id})">
             ${saleBadge}
             <!-- Wishlist Button -->
             <button
                 class="wishlist-btn absolute top-4 right-4 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 z-10"
-                onclick="toggleWishlist(this, ${product.id})">
+                onclick="event.stopPropagation(); toggleWishlist(this, ${product.id})">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                         d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -283,7 +538,7 @@ function createProductCard(product) {
             <!-- Quick View Button -->
             <button
                 class="absolute top-16 right-4 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 z-10 opacity-0 group-hover:opacity-100"
-                onclick="quickViewProduct(${product.id})"
+                onclick="event.stopPropagation(); quickViewProduct(${product.id})"
                 title="Quick View">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -295,7 +550,7 @@ function createProductCard(product) {
                 class="w-full h-48 object-contain group-hover:scale-105 transition-transform duration-300">
         </div>
         <div class="flex items-start justify-between">
-            <div>
+            <div class="cursor-pointer" onclick="navigateToProduct(${product.id})">
                 <h3 class="font-semibold text-[#1B232A] text-base mb-1">${product.name}</h3>
                 ${priceDisplay}
                 <!-- Star Rating -->
@@ -306,7 +561,7 @@ function createProductCard(product) {
             <!-- Add to Cart Button -->
             <button
                 class="add-to-cart-btn w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-primary transition-all duration-300"
-                onclick="addToCartProduct({id: ${product.id}, name: '${product.name}', price: ${product.price}})">
+                onclick="event.stopPropagation(); addToCartProduct({id: ${product.id}, name: '${product.name}', price: ${product.price}})">
                 <svg class="w-5 h-5 text-darkest" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -493,14 +748,19 @@ function quickViewProduct(productId) {
 function toggleFilterSection(sectionId) {
     const content = document.querySelector(`.filter-content-${sectionId}`);
     const arrow = document.querySelector(`.filter-arrow-${sectionId}`);
-    
+
     if (content && arrow) {
         content.classList.toggle('open');
         arrow.classList.toggle('rotate-180');
     }
 }
 
-// Make functions available globally
+// Navigate to product page
+function navigateToProduct(productId) {
+    window.location.href = `./product.html?id=${productId}`;
+}
+
+// Make functions and data available globally
 window.toggleFabricColor = toggleFabricColor;
 window.handleSortChange = handleSortChange;
 window.applyPriceFilter = applyPriceFilter;
@@ -508,6 +768,8 @@ window.clearAllFilters = clearAllFilters;
 window.quickViewProduct = quickViewProduct;
 window.toggleFilterSection = toggleFilterSection;
 window.closeQuickView = closeQuickView;
+window.navigateToProduct = navigateToProduct;
+window.shopProducts = shopProducts; // Make products available globally
 
 // Initialize on page load
 if (document.readyState === 'loading') {

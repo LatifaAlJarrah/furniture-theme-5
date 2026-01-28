@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body>
+    <!-- Header Placeholder (will be loaded dynamically) -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- About Section - We Design Sofas -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+
+                    <!-- Left Side - Images -->
+                    <div class="w-full lg:w-[60%] flex gap-4 lg:gap-6">
+                        <!-- First Image (smaller, with border) -->
+                        <div class="w-2/5 self-center">
+                            <div class="rounded-lg overflow-hidden">
+                                <img src="./src/assets/images/img11.jpg" alt="Modern Chair"
+                                    class="w-full h-64 md:h-80 xl:h-96 object-right object-cover hover:scale-105 transition-transform duration-300">
+                            </div>
+                        </div>
+                        <!-- Second Image (larger) -->
+                        <div class="w-3/5">
+                            <div class="rounded-xl overflow-hidden shadow-xl">
+                                <img src="./src/assets/images/img22.jpg" alt="Living Room Setup"
+                                    class="w-full h-72 md:h-96 xl:h-112 object-cover hover:scale-105 transition-transform duration-300">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side - Content -->
+                    <div class="w-full lg:w-[40%]">
+                        <h2 class="text-3xl md:text-4xl font-semibold text-[#1A1A1A] mb-8 leading-tight">
+                            We design sofas made for real living.
+                        </h2>
+
+                        <!-- Feature 1 -->
+                        <div class="flex gap-4 mb-6">
+                            <div class="shrink-0 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-quaternary-200 flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-[#1A1A1A] mb-2 poppins-font">Premium materials &
+                                    durable
+                                    construction</h3>
+                                <p class="text-[#808080] text-sm leading-relaxed poppins-font">
+                                    From premium materials to modern forms, every piece is crafted to deliver lasting
+                                    comfort, timeless style, and everyday functionality.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="flex gap-4 mb-8">
+                            <div class="shrink-0 mt-1">
+                                <div class="w-6 h-6 rounded-full bg-quaternary-200 flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-[#1A1A1A] mb-2 poppins-font">Designed for everyday
+                                    living</h3>
+                                <p class="text-[#808080] text-sm leading-relaxed poppins-font">
+                                    Each design reflects our commitment to quality, elegance, and thoughtful details —
+                                    made
+                                    to elevate modern living spaces.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Shop Now Button -->
+                        <a href="#"
+                            class="inline-flex items-center gap-3 bg-accent text-white font-semibold text-base px-12 py-3 hover:bg-darkest transition-colors duration-300 group">
+                            Shop Now
+                            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Values & What Sets Us Apart Section -->
+        <section class="py-10 px-8 bg-white arimo-font">
+            <div class="max-w-7xl mx-auto">
+                <!-- Header -->
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#101828] mb-4">
+                        Our Values & What Sets Us Apart
+                    </h2>
+                    <p class="text-base md:text-lg font-normal text-[#4A5565] max-w-2xl mx-auto leading-relaxed px-10 md:px-0">
+                        We uphold high standards to ensure your complete satisfaction at every stage of your experience
+                        with us
+                    </p>
+                </div>
+
+                <!-- Values Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <!-- Card 1: Exceptional Quality -->
+                    <div
+                        class="bg-white rounded-xl border border-gray-200 shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex flex-col items-start gap-4">
+                            <div class="shrink-0">
+                                <div class="w-14 h-14 rounded-full bg-[#DBEAFE] flex items-center justify-center">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.6362 17.1867L22.6562 28.5547C22.6788 28.6886 22.66 28.8261 22.6023 28.949C22.5446 29.0719 22.4508 29.1743 22.3334 29.2424C22.216 29.3106 22.0806 29.3412 21.9452 29.3303C21.8099 29.3194 21.6811 29.2674 21.5762 29.1814L16.8028 25.5987C16.5724 25.4266 16.2925 25.3335 16.0048 25.3335C15.7172 25.3335 15.4373 25.4266 15.2068 25.5987L10.4255 29.18C10.3206 29.266 10.192 29.3178 10.0568 29.3288C9.92166 29.3397 9.78639 29.3091 9.66904 29.2412C9.5517 29.1733 9.45786 29.0711 9.40005 28.9485C9.34224 28.8258 9.32321 28.6885 9.34549 28.5547L11.3642 17.1867"
+                                            stroke="#155DFC" stroke-width="2.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M16 18.6667C20.4183 18.6667 24 15.085 24 10.6667C24 6.24841 20.4183 2.66669 16 2.66669C11.5817 2.66669 8 6.24841 8 10.6667C8 15.085 11.5817 18.6667 16 18.6667Z"
+                                            stroke="#155DFC" stroke-width="2.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-lg md:text-xl font-bold text-[#101828] mb-3">
+                                    Exceptional Quality
+                                </h3>
+                                <p class="text-sm md:text-base text-[#4A5565] font-normal leading-relaxed">
+                                    We use the finest materials and components available in the market, with warranties
+                                    extending up to 10 years on all our products.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Unique Designs -->
+                    <div
+                        class="bg-white rounded-xl border border-gray-200 shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex flex-col items-start gap-4">
+                            <div class="shrink-0">
+                                <div class="w-14 h-14 rounded-full bg-[#FFE2E2] flex items-center justify-center">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.6665 12.6667C2.66653 11.183 3.11663 9.73414 3.95735 8.51159C4.79807 7.28903 5.98986 6.35024 7.37532 5.81923C8.76077 5.28822 10.2747 5.18996 11.7172 5.53743C13.1597 5.88489 14.4628 6.66174 15.4545 7.76537C15.5244 7.84005 15.6088 7.89959 15.7026 7.9403C15.7964 7.98101 15.8976 8.00201 15.9998 8.00201C16.1021 8.00201 16.2033 7.98101 16.2971 7.9403C16.3909 7.89959 16.4753 7.84005 16.5452 7.76537C17.5338 6.65457 18.8372 5.87119 20.282 5.5195C21.7268 5.16781 23.2445 5.2645 24.633 5.79668C26.0215 6.32886 27.215 7.2713 28.0547 8.49857C28.8943 9.72583 29.3403 11.1797 29.3332 12.6667C29.3332 15.72 27.3332 18 25.3332 20L18.0105 27.084C17.7621 27.3694 17.4557 27.5986 17.1119 27.7564C16.7681 27.9143 16.3946 27.9972 16.0162 27.9996C15.6379 28.002 15.2634 27.9238 14.9176 27.7703C14.5717 27.6169 14.2625 27.3915 14.0105 27.1094L6.6665 20C4.6665 18 2.6665 15.7334 2.6665 12.6667Z"
+                                            stroke="#E7000B" stroke-width="2.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-lg md:text-xl font-bold text-[#101828] mb-3">
+                                    Unique Designs
+                                </h3>
+                                <p class="text-sm md:text-base text-[#4A5565] font-normal leading-relaxed">
+                                    Our designs are inspired by the latest global trends, with an authentic touch that
+                                    suits your refined taste.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Outstanding Customer Service -->
+                    <div
+                        class="bg-white rounded-xl border border-gray-200 shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex flex-col items-start gap-4">
+                            <div class="shrink-0">
+                                <div class="w-14 h-14 rounded-full bg-[#DCFCE7] flex items-center justify-center">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.3332 28V25.3333C21.3332 23.9188 20.7713 22.5623 19.7711 21.5621C18.7709 20.5619 17.4143 20 15.9998 20H7.99984C6.58535 20 5.22879 20.5619 4.2286 21.5621C3.22841 22.5623 2.6665 23.9188 2.6665 25.3333V28"
+                                            stroke="#00A63E" stroke-width="2.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M21.3335 4.17072C22.4772 4.46721 23.49 5.13507 24.2131 6.06947C24.9361 7.00386 25.3284 8.1519 25.3284 9.33338C25.3284 10.5149 24.9361 11.6629 24.2131 12.5973C23.49 13.5317 22.4772 14.1996 21.3335 14.496"
+                                            stroke="#00A63E" stroke-width="2.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M29.3335 28V25.3333C29.3326 24.1516 28.9393 23.0037 28.2153 22.0698C27.4913 21.1358 26.4777 20.4688 25.3335 20.1733"
+                                            stroke="#00A63E" stroke-width="2.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M11.9998 14.6667C14.9454 14.6667 17.3332 12.2789 17.3332 9.33333C17.3332 6.38781 14.9454 4 11.9998 4C9.05432 4 6.6665 6.38781 6.6665 9.33333C6.6665 12.2789 9.05432 14.6667 11.9998 14.6667Z"
+                                            stroke="#00A63E" stroke-width="2.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-lg md:text-xl font-bold text-[#101828] mb-3">
+                                    Outstanding Customer Service
+                                </h3>
+                                <p class="text-sm md:text-base text-[#4A5565] font-normal leading-relaxed">
+                                    Our team is always available to assist you, from consultation to delivery,
+                                    installation, and after-sales support.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: 30 Years of Experience -->
+                    <div
+                        class="bg-white rounded-xl border border-gray-200 shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex flex-col items-start gap-4">
+                            <div class="shrink-0">
+                                <div class="w-14 h-14 rounded-full bg-[#F3E8FF] flex items-center justify-center">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 8V16L21.3333 18.6667" stroke="#9810FA" stroke-width="2.66667"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.9998 29.3334C23.3636 29.3334 29.3332 23.3638 29.3332 16C29.3332 8.63622 23.3636 2.66669 15.9998 2.66669C8.63604 2.66669 2.6665 8.63622 2.6665 16C2.6665 23.3638 8.63604 29.3334 15.9998 29.3334Z"
+                                            stroke="#9810FA" stroke-width="2.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-lg md:text-xl font-bold text-[#101828] mb-3">
+                                    30 Years of Experience
+                                </h3>
+                                <p class="text-sm md:text-base text-[#4A5565] font-normal leading-relaxed">
+                                    Three decades of experience in furniture manufacturing have enabled us to understand
+                                    your needs with precision and professionalism.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Warranty & Trust -->
+                    <div
+                        class="bg-white rounded-xl border border-gray-200 shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex flex-col items-start gap-4">
+                            <div class="shrink-0">
+                                <div class="w-14 h-14 rounded-full bg-[#FFEDD4] flex items-center justify-center">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M26.6668 17.3333C26.6668 23.9999 22.0002 27.3333 16.4535 29.2666C16.163 29.365 15.8475 29.3603 15.5602 29.2533C10.0002 27.3333 5.3335 23.9999 5.3335 17.3333V7.99995C5.3335 7.64633 5.47397 7.30719 5.72402 7.05714C5.97407 6.80709 6.31321 6.66662 6.66683 6.66662C9.3335 6.66662 12.6668 5.06662 14.9868 3.03995C15.2693 2.79861 15.6286 2.66602 16.0002 2.66602C16.3717 2.66602 16.731 2.79861 17.0135 3.03995C19.3468 5.07995 22.6668 6.66662 25.3335 6.66662C25.6871 6.66662 26.0263 6.80709 26.2763 7.05714C26.5264 7.30719 26.6668 7.64633 26.6668 7.99995V17.3333Z"
+                                            stroke="#F54900" stroke-width="2.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-lg md:text-xl font-bold text-[#101828] mb-3">
+                                    Warranty & Trust
+                                </h3>
+                                <p class="text-sm md:text-base text-[#4A5565] font-normal leading-relaxed">
+                                    We trust in the quality of our products and offer comprehensive warranties that
+                                    protect your investment and ensure peace of mind.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Competitive Prices -->
+                    <div
+                        class="bg-white rounded-xl border border-gray-200 shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex flex-col items-start gap-4">
+                            <div class="shrink-0">
+                                <div class="w-14 h-14 rounded-full bg-[#CBFBF1] flex items-center justify-center">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.3335 9.33331H29.3335V17.3333" stroke="#009689"
+                                            stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M29.3332 9.33331L17.9998 20.6666L11.3332 14L2.6665 22.6666"
+                                            stroke="#009689" stroke-width="2.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-lg md:text-xl font-bold text-[#101828] mb-3">
+                                    Competitive Prices
+                                </h3>
+                                <p class="text-sm md:text-base text-[#4A5565] font-normal leading-relaxed">
+                                    We offer the best value for money with ongoing promotions and flexible payment plans
+                                    to suit all budgets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Craftsmanship & Precision Section -->
+        <section class="py-16 px-4 arimo-font">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row gap-6">
+                    <!-- Left Side - Image -->
+                    <div class="w-full lg:w-1/2">
+                        <div class="h-full">
+                            <img src="./src/assets/images/about-img.jpg" alt="Crafted Furniture"
+                                class="w-full h-full object-cover max-h-[400px] lg:max-h-[500px] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)]">
+                        </div>
+                    </div>
+
+                    <!-- Right Side - Content -->
+                    <div class="w-full lg:w-1/2 px-8 py-4 flex flex-col">
+                        <h2 class="text-3xl md:text-4xl font-bold text-[#101828] mb-6">
+                            Craftsmanship & Precision
+                        </h2>
+
+                        <p class="text-base md:text-lg text-[#4A5565] font-normal mb-4 leading-relaxed">
+                            Every piece of furniture we offer is the result of work by skilled craftsmen who possess
+                            years of experience and passion for detail. We use modern manufacturing techniques
+                            combined with traditional handcrafted touches.
+                        </p>
+
+                        <p class="text-base md:text-lg text-[#4A5565] font-normal mb-6 leading-relaxed">
+                            From selecting natural wood to final finishes, every stage undergoes rigorous inspection
+                            to ensure the highest standards of quality and durability.
+                        </p>
+
+                        <!-- Bulleted List -->
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-3">
+                                <div class="shrink-0 mt-1 justify-center items-center">
+                                    <div class="w-2 h-2 rounded-full bg-blue-600"></div>
+                                </div>
+                                <span class="text-base md:text-lg text-[#364153] font-normal leading-relaxed">
+                                    100% natural wood from sustainable sources
+                                </span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="shrink-0 mt-1">
+                                    <div class="w-2 h-2 rounded-full bg-blue-600"></div>
+                                </div>
+                                <span class="text-base md:text-lg text-[#364153] font-normal leading-relaxed">
+                                    High-precision hand-finished details
+                                </span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="shrink-0 mt-1">
+                                    <div class="w-2 h-2 rounded-full bg-blue-600"></div>
+                                </div>
+                                <span class="text-base md:text-lg text-[#364153] font-normal leading-relaxed">
+                                    Strict quality testing for every product
+                                </span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="shrink-0 mt-1">
+                                    <div class="w-2 h-2 rounded-full bg-blue-600"></div>
+                                </div>
+                                <span class="text-base md:text-lg text-[#364153] font-normal leading-relaxed">
+                                    Customizable designs to your specifications
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 px-4 bg-[#526575] text-white arimo-font">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center space-y-4">
+                    <h3 class="text-2xl md:text-3xl xl:text-4xl font-bold">30+</h3>
+                    <p class="text-base md:text-lg font-normal text-[#DBEAFE]">Years of Experience</p>
+                </div>
+                <div class="text-center space-y-4">
+                    <h3 class="text-2xl md:text-3xl xl:text-4xl font-bold">50,000+</h3>
+                    <p class="text-base md:text-lg font-normal text-[#DBEAFE]">Satisfied Customers</p>
+                </div>
+                <div class="text-center space-y-4">
+                    <h3 class="text-2xl md:text-3xl xl:text-4xl font-bold">1,200+</h3>
+                    <p class="text-base md:text-lg font-normal text-[#DBEAFE]">Diverse Designs</p>
+                </div>
+                <div class="text-center space-y-4">
+                    <h3 class="text-2xl md:text-3xl xl:text-4xl font-bold">15</h3>
+                    <p class="text-base md:text-lg font-normal text-[#DBEAFE]">Showrooms Nationwide</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="max-w-7xl arimo-font container mx-auto text-center my-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#101828] mb-6">
+                Our Dedicated Team
+            </h2>
+            <p class="text-base md:text-lg text-[#4A5565] font-normal mb-6 leading-relaxed max-w-2xl mx-auto">
+                We pride ourselves on a professional and dedicated team that works passionately to achieve our vision and delight our
+                customers
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10 arimo-font">
+                <div class="text-center flex flex-col items-center justify-center gap-2">
+                    <img src="./src/assets/images/team.jpg" alt="Team Member" class="object-cover w-48 h-48 rounded-full shadow-[0px_10px_15px_-3px_#0000001A]">
+                    <h3 class="text-xl font-bold text-[#0A0A0A] mt-2">Professional Designers</h3>
+                    <p class="text-base font-normal text-[#4A5565]">Specialized in modern and classic furniture design</p>
+                </div>
+                <div class="text-center flex flex-col items-center justify-center gap-2">
+                    <img src="./src/assets/images/team.jpg" alt="Team Member" class="object-cover w-48 h-48 rounded-full shadow-[0px_10px_15px_-3px_#0000001A]">
+                    <h3 class="text-xl font-bold text-[#0A0A0A] mt-2">Skilled Craftsmen</h3>
+                    <p class="text-base font-normal text-[#4A5565]">Experts in furniture manufacturing to the highest quality standards</p>
+                </div>
+                <div class="text-center flex flex-col items-center justify-center gap-4">
+                    <img src="./src/assets/images/team.jpg" alt="Team Member" class="object-cover w-48 h-48 rounded-full shadow-[0px_10px_15px_-3px_#0000001A]">
+                    <h3 class="text-xl font-bold text-[#0A0A0A] mt-2">Customer Service Team</h3>
+                    <p class="text-base font-normal text-[#4A5565]">Always available to assist you and meet your needs</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription Section -->
+        <section class="py-8 px-4 bg-[#36434E] inter-font">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+                    <!-- Left: Promotional Text -->
+                    <div class="flex-1">
+                        <h2 class="text-3xl font-normal text-white witespace-nowrape">
+                            <span class="font-bold">Subscribe</span> & Get <span class="text-[#41C2F2]">10% OFF</span> for
+                            first order
+                        </h2>
+                    </div>
+        
+                    <!-- Middle: Decorative Arrow with Paper Airplane -->
+                    <div class="hidden lg:flex items-center justify-center shrink-0 px-4 z-0">
+                        <img src="./src/assets/images/middle-arrow.png" alt="Newsletter Arrow">
+                    </div>
+        
+                    <!-- Right: Subscription Form -->
+                    <div class="flex-1 w-full lg:w-auto">
+                        <form class="flex flex-col sm:flex-row gap-3" onsubmit="handleSubscribe(event)">
+                            <div class="relative flex-1 inter-font text-sm font-normal">
+                                <div class="absolute left-3 top-1/2 transform -translate-y-1/2">
+                                    <svg width="14" height="21" viewBox="0 0 14 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.7266 8.97266C13.7812 8.91797 13.8359 8.90885 13.8906 8.94531C13.9635 8.98177 14 9.03646 14 9.10938V14.6875C14 15.0521 13.8724 15.362 13.6172 15.6172C13.362 15.8724 13.0521 16 12.6875 16H1.3125C0.947917 16 0.638021 15.8724 0.382812 15.6172C0.127604 15.362 0 15.0521 0 14.6875V9.10938C0 9.03646 0.0273438 8.99089 0.0820312 8.97266C0.154948 8.9362 0.21875 8.9362 0.273438 8.97266C0.875 9.42839 2.27865 10.4583 4.48438 12.0625C4.52083 12.099 4.63932 12.1992 4.83984 12.3633C5.05859 12.5273 5.23177 12.6549 5.35938 12.7461C5.48698 12.819 5.65104 12.9193 5.85156 13.0469C6.05208 13.1562 6.24349 13.2383 6.42578 13.293C6.6263 13.3477 6.81771 13.375 7 13.375C7.16406 13.375 7.32812 13.3568 7.49219 13.3203C7.65625 13.2656 7.8112 13.2109 7.95703 13.1562C8.10286 13.0833 8.25781 12.9922 8.42188 12.8828C8.58594 12.7734 8.72266 12.6823 8.83203 12.6094C8.94141 12.5182 9.06901 12.418 9.21484 12.3086C9.36068 12.1992 9.46094 12.1172 9.51562 12.0625C11.6667 10.513 13.0703 9.48307 13.7266 8.97266ZM7 12.5C6.85417 12.5 6.67188 12.4544 6.45312 12.3633C6.2526 12.2539 6.08854 12.1628 5.96094 12.0898C5.83333 11.9987 5.64193 11.862 5.38672 11.6797C5.14974 11.4792 5.02214 11.3789 5.00391 11.3789C2.77995 9.75651 1.19401 8.58073 0.246094 7.85156C0.0820312 7.72396 0 7.55078 0 7.33203V6.8125C0 6.44792 0.127604 6.13802 0.382812 5.88281C0.638021 5.6276 0.947917 5.5 1.3125 5.5H12.6875C13.0521 5.5 13.362 5.6276 13.6172 5.88281C13.8724 6.13802 14 6.44792 14 6.8125V7.33203C14 7.55078 13.918 7.72396 13.7539 7.85156C12.8607 8.54427 11.2747 9.72005 8.99609 11.3789C8.97786 11.3789 8.84115 11.4792 8.58594 11.6797C8.34896 11.862 8.16667 11.9987 8.03906 12.0898C7.91146 12.1628 7.73828 12.2539 7.51953 12.3633C7.31901 12.4544 7.14583 12.5 7 12.5Z"
+                                            fill="#36434E" />
+                                    </svg>
+                                </div>
+                                <input type="email" placeholder="Enter your email address"
+                                    class="w-full pl-10 pr-4 py-3 bg-white border border-gray-300 text-gray-700 placeholder-[#757575] focus:outline-none focus:ring-2 focus:ring-[#4FC3F7] focus:border-transparent arimo-font"
+                                    required />
+                                <button type="submit"
+                                    class="absolute right-2 px-6 top-1/2 -translate-y-1/2 py-2 bg-quaternary-500 hover:bg-[#526575] text-white font-normal transition-colors duration-300 uppercase tracking-wide poppins-font whitespace-nowrap">
+                                    SUBSCRIBE
+                                </button>
+                            </div>
+        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Placeholder (will be loaded dynamically) -->
+    <div id="footer-placeholder"></div>
+
+    <script src="./src/js/load-components.js"></script>
+</body>
+
+</html>

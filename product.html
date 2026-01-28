@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-white inter-font">
+    <!-- Header Placeholder (will be loaded dynamically) -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Product Section -->
+        <section class="py-8 px-4 md:px-10 bg-white inter-font">
+            <div class="max-w-7xl mx-auto">
+                <!-- Breadcrumb Navigation -->
+                <div class="mb-6">
+                    <nav class="text-sm text-[#668091] font-normal poppins-font">
+                        <a href="./index.html" class="hover:text-darkest transition-colors uppercase">HOME</a>
+                        <span class="mx-2">/</span>
+                        <a href="./shop.html" class="hover:text-darkest transition-colors uppercase">furniture</a>
+                        <span class="mx-2">/</span>
+                        <span class="uppercase" id="breadcrumbCategory">chair</span>
+                    </nav>
+                </div>
+
+                <!-- Product Content -->
+                <div class="flex flex-col lg:flex-row gap-8 lg:gap-12">
+                    <!-- Left Side - Product Images -->
+                    <div class="w-full lg:w-1/2">
+                        <!-- Main Product Image -->
+                        <div class="relative mb-4 bg-gray-50 rounded-lg overflow-hidden">
+                            <!-- Badges -->
+                            <div id="productBadges" class="absolute top-4 left-4 z-10 flex flex-col gap-2">
+                                <!-- Badges will be dynamically inserted here -->
+                            </div>
+                            <img id="mainProductImage" src="./src/assets/images/product-1.png" alt="Product"
+                                class="w-full h-[500px] object-contain">
+                        </div>
+                        <!-- Thumbnail Images -->
+                        <div class="flex gap-4" id="thumbnailImages">
+                            <!-- Thumbnails will be dynamically inserted here -->
+                        </div>
+                    </div>
+
+                    <!-- Right Side - Product Details -->
+                    <div class="w-full lg:w-1/2">
+                        <!-- Product Name -->
+                        <h1 id="productName" class="text-3xl md:text-4xl font-medium text-black mb-4 poppins-font">
+                            Product Name
+                        </h1>
+
+                        <!-- Product Description -->
+                        <p id="productDescription" class="text-base text-[#52667A] mb-6 leading-relaxed">
+                            Product description will appear here.
+                        </p>
+
+                        <!-- Price -->
+                        <div class="mb-6">
+                            <div class="flex items-center gap-4 poppins-font">
+                                <span id="productPrice" class="text-3xl font-normal text-black">$199.00</span>
+                                <span id="productOriginalPrice"
+                                    class="text-xl text-[#52667A] font-medium line-through hidden">$499.00</span>
+                            </div>
+                        </div>
+
+                        <!-- Measurements -->
+                        <div class="mb-6">
+                            <p class="text-base font-bold text-black mb-2">Measurements</p>
+                            <p id="productMeasurements" class="text-base text-black">37 x 31 x 30</p>
+                        </div>
+
+                        <!-- Chair Color Selection -->
+                        <div class="mb-6">
+                            <p class="text-sm font-semibold text-[#1A1A1A] mb-3">CHAIR COLOR:</p>
+                            <div class="flex items-center gap-2 mb-2">
+                                <span id="selectedColorName" class="text-base text-[#1A1A1A] font-medium">Grey</span>
+                            </div>
+                            <div class="flex gap-3" id="colorVariants">
+                                <!-- Color variants will be dynamically inserted here -->
+                            </div>
+                        </div>
+
+                        <!-- Quantity Selector -->
+                        <div class="mb-6">
+                            <div class="flex flex-col md:flex-row items-center gap-4">
+                                <div class="flex items-center gap-2">
+                                    <label class="text-sm font-semibold text-[#1A1A1A]">Quantity:</label>
+                                    <div class="flex items-center border border-gray-300 bg-[#F3F5F7] rounded-lg">
+                                        <button type="button" id="decreaseQty"
+                                            class="px-4 py-2 hover:bg-gray-100 transition-colors text-lg font-semibold cursor-pointer">-</button>
+                                        <input type="text" id="productQuantity" value="1" min="1"
+                                            class="w-16 text-center py-2 focus:outline-none text-base font-medium">
+                                        <button type="button" id="increaseQty"
+                                            class="px-4 py-2 hover:bg-gray-100 transition-colors text-lg font-semibold cursor-pointer">+</button>
+                                    </div>
+                                </div>
+                                <!-- Add to Cart Button -->
+                                <button id="addToCartBtn"
+                                    class="w-full px-12 py-2 bg-[#36434E] my-auto text-white font-medium uppercase tracking-wide hover:bg-[#2a3339] transition-colors duration-300">
+                                    ADD TO CART
+                                </button>
+                            </div>
+                        </div>
+
+                     
+
+                        <!-- Product Info -->
+                        <div class="space-y-2 text-sm text-[#52667A]">
+                            <p><span class="font-normal">SKU:</span> <span id="productSKU" class="font-medium text-black">0247657</span></p>
+                            <p><span class="font-normal">Category:</span> <span id="productCategory" class="font-medium text-black">Living Room,
+                                    Armchairs</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription Section -->
+        <section class="py-8 px-4 bg-[#36434E] inter-font">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+                    <!-- Left: Promotional Text -->
+                    <div class="flex-1">
+                        <h2 class="text-3xl font-normal text-white witespace-nowrape">
+                            <span class="font-bold">Subscribe</span> & Get <span class="text-[#41C2F2]">10% OFF</span>
+                            for
+                            first order
+                        </h2>
+                    </div>
+
+                    <!-- Middle: Decorative Arrow with Paper Airplane -->
+                    <div class="hidden lg:flex items-center justify-center shrink-0 px-4 z-0">
+                        <img src="./src/assets/images/middle-arrow.png" alt="Newsletter Arrow">
+                    </div>
+
+                    <!-- Right: Subscription Form -->
+                    <div class="flex-1 w-full lg:w-auto">
+                        <form class="flex flex-col sm:flex-row gap-3" onsubmit="handleSubscribe(event)">
+                            <div class="relative flex-1 inter-font text-sm font-normal">
+                                <div class="absolute left-3 top-1/2 transform -translate-y-1/2">
+                                    <svg width="14" height="21" viewBox="0 0 14 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.7266 8.97266C13.7812 8.91797 13.8359 8.90885 13.8906 8.94531C13.9635 8.98177 14 9.03646 14 9.10938V14.6875C14 15.0521 13.8724 15.362 13.6172 15.6172C13.362 15.8724 13.0521 16 12.6875 16H1.3125C0.947917 16 0.638021 15.8724 0.382812 15.6172C0.127604 15.362 0 15.0521 0 14.6875V9.10938C0 9.03646 0.0273438 8.99089 0.0820312 8.97266C0.154948 8.9362 0.21875 8.9362 0.273438 8.97266C0.875 9.42839 2.27865 10.4583 4.48438 12.0625C4.52083 12.099 4.63932 12.1992 4.83984 12.3633C5.05859 12.5273 5.23177 12.6549 5.35938 12.7461C5.48698 12.819 5.65104 12.9193 5.85156 13.0469C6.05208 13.1562 6.24349 13.2383 6.42578 13.293C6.6263 13.3477 6.81771 13.375 7 13.375C7.16406 13.375 7.32812 13.3568 7.49219 13.3203C7.65625 13.2656 7.8112 13.2109 7.95703 13.1562C8.10286 13.0833 8.25781 12.9922 8.42188 12.8828C8.58594 12.7734 8.72266 12.6823 8.83203 12.6094C8.94141 12.5182 9.06901 12.418 9.21484 12.3086C9.36068 12.1992 9.46094 12.1172 9.51562 12.0625C11.6667 10.513 13.0703 9.48307 13.7266 8.97266ZM7 12.5C6.85417 12.5 6.67188 12.4544 6.45312 12.3633C6.2526 12.2539 6.08854 12.1628 5.96094 12.0898C5.83333 11.9987 5.64193 11.862 5.38672 11.6797C5.14974 11.4792 5.02214 11.3789 5.00391 11.3789C2.77995 9.75651 1.19401 8.58073 0.246094 7.85156C0.0820312 7.72396 0 7.55078 0 7.33203V6.8125C0 6.44792 0.127604 6.13802 0.382812 5.88281C0.638021 5.6276 0.947917 5.5 1.3125 5.5H12.6875C13.0521 5.5 13.362 5.6276 13.6172 5.88281C13.8724 6.13802 14 6.44792 14 6.8125V7.33203C14 7.55078 13.918 7.72396 13.7539 7.85156C12.8607 8.54427 11.2747 9.72005 8.99609 11.3789C8.97786 11.3789 8.84115 11.4792 8.58594 11.6797C8.34896 11.862 8.16667 11.9987 8.03906 12.0898C7.91146 12.1628 7.73828 12.2539 7.51953 12.3633C7.31901 12.4544 7.14583 12.5 7 12.5Z"
+                                            fill="#36434E" />
+                                    </svg>
+                                </div>
+                                <input type="email" placeholder="Enter your email address"
+                                    class="w-full pl-10 pr-4 py-3 bg-white border border-gray-300 text-gray-700 placeholder-[#757575] focus:outline-none focus:ring-2 focus:ring-[#4FC3F7] focus:border-transparent arimo-font"
+                                    required />
+                                <button type="submit"
+                                    class="absolute right-2 px-6 top-1/2 -translate-y-1/2 py-2 bg-quaternary-500 hover:bg-[#526575] text-white font-normal transition-colors duration-300 uppercase tracking-wide poppins-font whitespace-nowrap">
+                                    SUBSCRIBE
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder (will be loaded dynamically) -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript Files -->
+    <script src="./src/js/shop-filters.js"></script>
+    <script src="./src/js/cart.js"></script>
+    <script src="./src/js/newsletter.js"></script>
+    <script src="./src/js/navigation.js"></script>
+    <script src="./src/js/mobile-navigation.js"></script>
+    <script src="./src/js/search.js"></script>
+    <script src="./src/js/product.js"></script>
+    <script src="./src/js/load-components.js"></script>
+</body>
+
+</html>
