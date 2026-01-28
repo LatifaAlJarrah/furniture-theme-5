@@ -157,4 +157,202 @@
     #mobileMenu a {
         transition: all 0.2s ease;
     }
+
+    /* Custom Checkbox Styles */
+    .custom-checkbox {
+        position: relative;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    .custom-checkbox:checked {
+        background-color: var(--color-primary);
+        border-color: var(--color-primary);
+    }
+
+    .custom-checkbox:checked::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -60%) rotate(45deg);
+        width: 4px;
+        height: 8px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        border-radius: 0;
+    }
+
+    /* Filter Accordion Styles (Mobile) */
+    @media (max-width: 1023px) {
+        .filter-content-price,
+        .filter-content-fabric-color,
+        .filter-content-material,
+        .filter-content-brand,
+        .filter-content-size {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .filter-content-price.open,
+        .filter-content-fabric-color.open,
+        .filter-content-material.open,
+        .filter-content-brand.open,
+        .filter-content-size.open {
+            max-height: 1000px;
+            transition: max-height 0.3s ease-in;
+        }
+
+        .filter-arrow-price.rotate-180,
+        .filter-arrow-fabric-color.rotate-180,
+        .filter-arrow-material.rotate-180,
+        .filter-arrow-brand.rotate-180,
+        .filter-arrow-size.rotate-180 {
+            transform: rotate(180deg);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .filter-content-price,
+        .filter-content-fabric-color,
+        .filter-content-material,
+        .filter-content-brand,
+        .filter-content-size {
+            max-height: none !important;
+            overflow: visible !important;
+        }
+    }
+
+    /* Quick View Modal */
+    .quickview-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+    }
+    .quickview-modal.hidden {
+        display: none;
+    }
+    .quickview-backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .quickview-panel {
+        position: relative;
+        width: 100%;
+        max-width: 520px;
+        background: #fff;
+        /* border-radius: 14px; */
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+        transform: translateY(8px);
+        opacity: 0;
+        transition: transform 180ms ease, opacity 180ms ease;
+    }
+    .quickview-modal.open .quickview-panel {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .quickview-close {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        width: 34px;
+        height: 34px;
+        color: #1B232A;
+        font-size: 22px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .quickview-close:hover {
+        background: #F7F8FA;
+    }
+
+    .qv-pill {
+        border: 1px solid #CCCCCC;
+        padding: 6px 8px;
+        font-size: 16px;
+        color: #808080;
+        background: white;
+        transition: all 150ms ease;
+    }
+    .qv-pill:hover {
+        border-color: #91B0CA;
+    }
+    .qv-pill.active {
+        border-color: #36434E;
+        background: #ABDEF433;
+        color: black;
+    }
+
+    .qv-thumb {
+        width: 52px;
+        height: 52px;
+        border: 1px solid #ECEFF2;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+        transition: all 150ms ease;
+    }
+    .qv-thumb.active {
+        border-color: #91B0CA;
+        box-shadow: 0 0 0 2px rgba(145, 176, 202, 0.2);
+    }
+
+    .qv-qty {
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid #ECEFF2;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 44px;
+    }
+    .qv-qty-btn {
+        width: 42px;
+        height: 44px;
+        background: #fff;
+        color: #425462;
+        font-size: 18px;
+    }
+    .qv-qty-btn:hover {
+        background: #F7F8FA;
+    }
+    .qv-qty-value {
+        width: 44px;
+        text-align: center;
+        font-weight: 600;
+        color: #1B232A;
+    }
+
+    .qv-primary {
+        height: 44px;
+        flex: 1;
+        background: #36434E;
+        color: #fff;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.06em;
+    }
+    .qv-primary:hover {
+        background: #11171C;
+    }
+    .qv-secondary {
+        width: 100%;
+        height: 44px;
+        background: #91B0CA;
+        color: #fff;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.06em;
+    }
+    .qv-secondary:hover {
+        background: #7FA2BE;
+    }
 }
