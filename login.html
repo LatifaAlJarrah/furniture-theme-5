@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-white h-full min-h-screen poppins-font">
+    <main class="flex flex-col lg:flex-row h-screen min-h-screen">
+        <!-- Left Column - Login Form -->
+        <div class="w-full lg:w-[45%] flex items-center justify-center p-8 lg:p-12 bg-white shrink-0">
+            <div class="w-full max-w-md">
+                <h1 class="text-3xl lg:text-4xl font-medium text-[#266497] mb-2">Log in</h1>
+                <p class="text-base text-[#447EAF] mb-8">
+                    Don't have an accout yet? <a href="./signup.html"
+                        class="text-lg font-medium hover:underline">Sign Up</a>
+                </p>
+
+                <form action="" class="space-y-5">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-500 mb-1.5">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#266497]/30 focus:border-[#266497]">
+                    </div>
+
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-500 mb-1.5">Password</label>
+                        <div class="relative">
+                            <input type="password" id="password" name="password" placeholder="Password"
+                                class="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#266497]/30 focus:border-[#266497]">
+                            <button type="button" id="togglePassword"
+                                class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 p-1"
+                                aria-label="Toggle password visibility">
+                                <svg id="eyeIcon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                <svg id="eyeOffIcon" class="w-5 h-5 hidden" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c4.99 0 9.034-3.366 10.43-8.493a10.523 10.523 0 00-1.556-2.062M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411L3 3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" id="remember" name="remember"
+                                class="rounded border-gray-300 text-[#266497] focus:ring-[#266497]">
+                            <span class="text-sm font-medium text-gray-600">Remember me</span>
+                        </label>
+                        <a href="./forgot-password.html"
+                            class="text-sm font-medium text-[#266497] hover:underline">Forgot password?</a>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full py-3.5 bg-[#447EAF] hover:bg-[#1e5080] text-white font-normal text-base uppercase tracking-wide rounded-lg transition-colors">
+                        SIGN IN
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Right Column - Decorative Image -->
+        <div class="hidden lg:flex lg:w-[55%] h-screen min-h-0 overflow-hidden">
+            <img src="./src/assets/images/login-image.png" alt=""
+                class="w-full h-full object-cover min-h-full min-w-full" role="presentation">
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            const passwordInput = document.getElementById('password');
+            const eyeIcon = document.getElementById('eyeIcon');
+            const eyeOffIcon = document.getElementById('eyeOffIcon');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.classList.add('hidden');
+                eyeOffIcon.classList.remove('hidden');
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.classList.remove('hidden');
+                eyeOffIcon.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>
